@@ -1,0 +1,34 @@
+div.body1_title {
+    font-size: 250%;
+    padding: 1% 5%;
+    width: 100%;
+
+}
+
+div.body1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+.body1 img {
+    padding: 1% 0% 0% 5%;
+    width: 60%;
+}
+
+.alt1 {
+    width: 40%;
+    padding: 1% 0% 0% 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+.alt1 h1 {
+    
+    font-size: 200%;
+}
+
+.alt1 p {
+    font-size: 100%;
+}

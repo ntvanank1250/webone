@@ -1,0 +1,40 @@
+{% extends 'main/base.html' %}
+{% block title %} Third Project {% endblock %}
+
+{% block body %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/project.css' %}">
+<style>
+
+</style>
+<div>
+    <div class="body1_title">
+        <h1>My Third Project</h1>
+    </div>
+    <div class="body1">
+        <img src="{% static 'img/third.jpg' %}" alt="">
+        <div class="alt1">
+            <div>
+                <h1>About the project:</h1>
+                <br>
+                <p>A web development project</p>
+                <br>
+            </div>
+            <div>
+                <h1>Technology used:</h1>
+                <br>
+                <p>Django</p>
+                <br>
+                <p>HTML,CSS,Javascript</p>
+                <br>
+                
+            </div>
+            <div>
+                <h1>Author</h1>
+                <br>
+                <p>Duy Hieu</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

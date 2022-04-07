@@ -1,0 +1,39 @@
+    img {
+        image-rendering: pixelated;
+        object-fit: fill ;
+    }
+    .body_projects{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        
+    }
+    .body_content{
+        padding: 0% 0% 0% 5%;
+        width: 26.6%;
+        display: flex;
+        flex-direction: column ;
+    }
+    div.body_content h1 {
+        padding: 3% 0% 3% 0%;
+        font-size: 200%;
+
+    }
+    div.body_content h2 {
+        
+        padding: 3% 0% 3% 0%;
+        font-size: 150%;
+
+    }
+    div.body_content a{
+        width: 20%;
+        height: 100%;
+        padding: 2% 2%;
+        background-color: #4267b2;
+    } 
+    div.body_title{
+        font-size: 250%;
+        padding: 1% 5%;
+        width: 100%;
+        
+    }
