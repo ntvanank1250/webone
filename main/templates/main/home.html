@@ -5,10 +5,21 @@
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/home.css' %}">
 <style>
-
+    .body_content img{
+        transition: all .2s ease-in-out;
+    }
+    
+    .body_content img:hover{
+        transform: scale(1.1);
+    }
+    .body_content a{
+        transition: all .2s ease-in-out;
+    }
+    .body_content a:hover{
+        transform: scale(1.2);}
 </style>
-<div class="body">
-    <div class="body_title"><h1>Projects</h1></div>
+<div>
+    <div style="font-size: 250%; padding:1% 0% 1% 5%"><h1>Projects</h1></div>
     <div class="body_projects">
         <div class="body_content">
             <img  width="100%" src="{% static  'img/first.jpg' %}" alt="">

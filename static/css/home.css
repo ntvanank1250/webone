@@ -13,7 +13,13 @@
         width: 26.6%;
         display: flex;
         flex-direction: column ;
+    
     }
+   
+
+
+
+
     div.body_content h1 {
         padding: 3% 0% 3% 0%;
         font-size: 200%;
@@ -33,7 +39,13 @@
     } 
     div.body_title{
         font-size: 250%;
-        padding: 1% 5%;
+        padding: 1% 0% 1% 5%;
+        width: 100%;
+        
+    }
+    div.body_title h1{
+        font-size: 250%;
+        padding: 1% 0% 1% 5%;
         width: 100%;
         
     }

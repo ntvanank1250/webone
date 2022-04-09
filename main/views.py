@@ -3,7 +3,9 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request,'main/home.html')
+    return render(request, 'main/home.html')
+   
+
 def first(request):
     return render(request,'main/first.html')
 def second(request):

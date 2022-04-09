@@ -1,0 +1,75 @@
+{% extends 'main/base.html' %}
+{% block title %} Home {% endblock %}
+
+{% block head %}
+{% load static %}
+<style>
+   
+
+    div.dropdown {
+        padding: 2% 0%;
+        background-color: #EFEFEF;
+    }
+
+    .dropdown:hover {
+        background-color: white;
+        height: 100%;
+    }
+
+    .dropbtn {
+
+        color: black;
+        height: 100%;
+        width: 100%;
+        font-size: 100%;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .header_4 {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 73%;
+        }
+</style>
+<div class="header_4">
+    <div class="dropdown">
+        <div><button class="dropbtn">Blog Manager</button></div>
+        <div class="dropdown-content">
+            <a href="{% url 'blog:create_blog' %}">Add Blog</a>
+        </div>
+    </div>
+</div>
+{%endblock%}
+{% block body %}
+{% for blog in blogs %}
+<div><a href="{% url 'blog:blog_i' blog.id %}">{{blog.id}}-{{blog.title}}</a></div>
+<div>{{blog.description}}</div>
+<div>{{blog.date}}</div>
+
+{% endfor %}
+{%endblock%}
