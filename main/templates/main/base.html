@@ -22,15 +22,15 @@
             background-color: beige;
         }
 
-        .header_1 {
-            padding: 0% 0% 1% 5%;
+        .header_title {
+            padding: 1% 0% 1% 5%;
             width: 17%;
             height: 100%;
             font-size: 250%;
             font-weight: bolder;
         }
 
-        div.header_2 {
+        div.header_item {
             padding: 1% 0% 1% 0%;
             font-size: 150%;
             width: 5%;
@@ -40,7 +40,7 @@
 
         }
 
-        div.header_2 :hover {
+        div.header_item:hover {
             background-color: #A9A9A9;
         }
 
@@ -50,7 +50,7 @@
 
         }
 
-        .header_4 {
+        .header_menu {
             display: flex;
             flex-direction: row-reverse;
             width: 73%;
@@ -60,22 +60,49 @@
         div.login {
             padding: 2% 0%;
         }
+        /* Mobile width <740px */
+        @media only screen and (max-width:740px) {
+        .header_title {
+        width: 40%;
+        }
+        div.header_item {
+            width: 20%;
+        }
+        .header_menu{
+            width: 20%;
+        }
+
+        } 
+        /* tablet width >=740px and width< 1024 */
+        @media only screen and (min-width:741px) and (max-width:1024px) {
+        .header_title {
+        width: 20%;
+        font-size: 150%;
+        }
+        div.header_item {
+            width: 10%;
+        }
+        .header_menu{
+            width: 60%;
+        }
+        
+        }
     </style>
 </head>
 
 <body>
     <div class="body">
         <div class="header">
-            <div class="header_1">
+            <div class="header_title">
                 <a href="{% url 'main:home' %}">My Portfolio</a>
             </div>
-            <div class="header_2">
+            <div class="header_item">
                 <a href="{% url 'main:home' %}">Home</a>
             </div>
-            <div class="header_2">
+            <div class="header_item">
                 <a href="{% url 'blog:blog' %}">Blog</a>
             </div>
-            <div class="header_4">
+            <div class="header_menu">
                 
                     {% block head %} {% endblock %}
                 

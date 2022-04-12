@@ -1,8 +1,7 @@
-div.body1_title {
-    font-size: 250%;
+div.pro_item {
+    font-size: 150%;
     padding: 1% 5%;
     width: 100%;
-
 }
 
 div.body1 {
@@ -11,24 +10,56 @@ div.body1 {
     display: flex;
 
 }
-
-.body1 img {
+.pro_img img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    object-fit: cover;
+}
+.pro_img {
     padding: 1% 0% 0% 5%;
     width: 60%;
+    height: auto;
 }
 
-.alt1 {
+.pro_alt {
     width: 40%;
     padding: 1% 0% 0% 3%;
     display: flex;
     flex-direction: column;
 }
 
-.alt1 h1 {
+.pro_alt h1 {
     
     font-size: 200%;
 }
 
-.alt1 p {
+.pro_alt p {
     font-size: 100%;
+}
+/*  mobile and tablet */
+@media only screen  and (max-width:1024px) {
+    .pro_img {
+        width: 90%;
+        height: auto;
+    }
+    .pro_alt {
+        width: 100%;
+        padding: 1% 0% 0% 5%;
+        text-align: center;
+        
+    }
+    div.body1 {
+        flex-wrap: wrap
+        
+    }
+
+}
+  /* Mobile width <740px */
+  @media only screen and (max-width:740px) {
+}
+
+/* tablet width >=740px and width< 1024 */
+@media only screen and (min-width:741px) and (max-width:1024px) {
 }

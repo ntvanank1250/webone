@@ -4,7 +4,11 @@
 {% block head %}
 {% load static %}
 <style>
-   
+    div.blog_body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
 
     div.dropdown {
         padding: 2% 0%;
@@ -50,13 +54,75 @@
     .dropdown:hover .dropdown-content {
         display: block;
     }
-    .header_4 {
-            display: flex;
-            flex-direction: row-reverse;
-            width: 73%;
-        }
+
+    .blog_menu {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+
+    div.blog_side {
+        width: 30%;
+    }
+
+
+    div.blog_mid {
+        
+        text-align: left;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog_title {
+        font-size: 250%;
+        /* color: #34495e; */
+    }
+    .blog_title a{
+        color: #34495e;
+    }
+    .blog_title p{
+        font-size: 50%;
+        color: black;
+    }
+    .blog_description{
+        font-size: 150%;
+    }
+    .blog_item{
+        padding: 2% 0%;
+        
+    }
+    /*  mobile and tablet */
+@media only screen  and (max-width:1024px) {
+   
+}
+  /* Mobile width <740px */
+  @media only screen and (max-width:740px) {
+    div.blog_side {
+        width: 1%;
+    }
+
+
+    div.blog_mid {
+        text-align: center;
+        width: 98%;
+    }
+}
+
+/* tablet width >=740px and width< 1024 */
+@media only screen and (min-width:741px) and (max-width:1024px) {
+    div.blog_side {
+        width: 10%;
+    }
+
+
+    div.blog_mid {
+        text-align: center;
+        width: 80%;
+    }
+}
 </style>
-<div class="header_4">
+<div class="blog_menu">
     <div class="dropdown">
         <div><button class="dropbtn">Blog Manager</button></div>
         <div class="dropdown-content">
@@ -66,10 +132,26 @@
 </div>
 {%endblock%}
 {% block body %}
-{% for blog in blogs %}
-<div><a href="{% url 'blog:blog_i' blog.id %}">{{blog.id}}-{{blog.title}}</a></div>
-<div>{{blog.description}}</div>
-<div>{{blog.date}}</div>
+<div class="blog_body">
+    <div class="blog_side"></div>
+    <div class="blog_mid">
 
-{% endfor %}
+        {% for blog in blogs %}
+        <div class="blog_item">
+            <div class="blog_title"><a href="{% url 'blog:blog_i' blog.id %}">
+                    <p>{{blog.id}}</p><h1>{{blog.title}}</h1>
+                </a>
+            </div>
+            <div class="blog_description"><br>{{blog.description}} </div>
+            <div class="blog_date"><br>{{blog.date}}</div>
+        </div>
+        {% endfor %}
+
+    </div>
+    <div class="blog_side"></div>
+
+</div>
+
+
+
 {%endblock%}

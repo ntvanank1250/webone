@@ -54,6 +54,56 @@
     .dropdown:hover .dropdown-content {
         display: block;
     }
+    .blogi_body{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .blogi_side{
+        width: 20%;
+    }
+    .blogi_mid{
+        width: 60%;
+        flex-direction: column;
+    }
+    .blogi_comment{
+        text-align: left;
+    }
+    .blogi_mid h1{
+        font-size: 250%;
+    }
+    /*  mobile and tablet */
+@media only screen  and (max-width:1024px) {
+    
+
+}
+  /* Mobile width <740px */
+  @media only screen and (max-width:740px) {
+    .blogi_side{
+        width: 1%;
+    }
+    .blogi_mid{
+        width: 98%;
+    }
+    .blogi_comment{
+    text-align: center;
+    }
+}
+
+/* tablet width >=740px and width< 1024 */
+@media only screen and (min-width:741px) and (max-width:1024px) {
+    .blogi_side{
+        width: 10%;
+    }
+    .blogi_mid{
+        width: 80%;
+    }
+    .blogi_comment{
+    text-align: center;
+    }
+        
+        
+}
 </style>
 <div class="header_4">
     <div class="dropdown">
@@ -68,24 +118,28 @@
 </div>
 {%endblock%}
 {% block body %}
-<div>
-<h1>{{blog.id}}-{{blog.title}}</h1>
-<p>{{blog.description}}</p>
-<p>{{blog.content}}</p>
-</div>
-<div><h1>Leave a comment:</h1>
+<div class="blogi_body">
+    <div class="blogi_side"></div>
+<div class="blogi_mid">
+<p>{{blog.id}}</p><h1> {{blog.title}}</h1>
+<h3><br>{{blog.description}}</h3>
+<p> <br>{{blog.content}} <br></p>
+
+<div class="blogi_comment"><h1><br> Leave a comment:</h1>
     <form method="POST" >
         {% if error_message %}
         <span class="alert">{{error_message}}</span>
         <br>
         {% endif %}
         {% csrf_token %}
-        <input type="text" name="your_name" placeholder="your name">
+        <input type="text" name="your_name" placeholder="Your name">
         <br><br>
         <textarea type="text" rows="10" cols="30" name="comment" placeholder="Leave a comment"></textarea>
         <br><br>
         <input class="submit" type="submit" name="submit" value="Save">
       </form>
 </div>
-
+</div>
+<div class="blogi_side"></div>
+</div>
 {%endblock%}
