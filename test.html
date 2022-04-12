@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+    
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <style>
+        a {
+            color: black;
+            text-decoration-line: none;
+        }
+
+        .header {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            background-color: beige;
+        }
+
+        .header_title {
+            padding: 1% 0% 1% 5%;
+            width: 17%;
+            height: 100%;
+            font-size: 250%;
+            font-weight: bolder;
+        }
+
+        div.header_item {
+            padding: 1% 0% 1% 0%;
+            font-size: 150%;
+            width: 5%;
+            height: 100%;
+            text-align: center;
+            vertical-align: bottom;
+
+        }
+
+        div.header_item:hover {
+            background-color: #A9A9A9;
+        }
+
+        .body {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .header_menu {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 73%;
+            
+        }
+
+        div.login {
+            padding: 2% 0%;
+        }
+        /* Mobile width <740px */
+        @media only screen and (max-width:740px) {
+        .header_title {
+        width: 40%;
+        }
+        div.header_item {
+            width: 20%;
+        }
+        .header_menu{
+            width: 20%;
+        }
+
+        } 
+        /* tablet width >=740px and width< 1024 */
+        @media only screen and (min-width:741px) and (max-width:1024px) {
+        .header_title {
+        width: 20%;
+        font-size: 150%;
+        }
+        div.header_item {
+            width: 10%;
+        }
+        .header_menu{
+            width: 60%;
+        }
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="header">
+            <div class="header_title">
+                <a href="/">My Portfolio</a>
+            </div>
+            <div class="header_item">
+                <a href="/">Home</a>
+            </div>
+            <div class="header_item">
+                <a href="/blog/">Blog</a>
+            </div>
+            <div class="header_menu">
+                
+                    
+
+<style>
+    .header_4 {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 73%;
+    }
+
+    div.dropdown {
+        padding: 2% 0%;
+        background-color: #EFEFEF;
+    }
+
+    .dropdown:hover {
+        background-color: white;
+        height: 100%;
+    }
+
+    .dropbtn {
+
+        color: black;
+        height: 100%;
+        width: 100%;
+        font-size: 100%;
+        border: none;
+        cursor: pointer;
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .blogi_body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+
+    .blogi_side {
+        width: 20%;
+    }
+
+    .blogi_mid {
+        width: 60%;
+        flex-direction: column;
+    }
+
+    .blogi_comment {
+        text-align: left;
+    }
+
+    .blogi_mid h1 {
+        font-size: 250%;
+    }
+
+    /*  mobile and tablet */
+    @media only screen and (max-width:1024px) {}
+
+    /* Mobile width <740px */
+    @media only screen and (max-width:740px) {
+        .blogi_side {
+            width: 1%;
+        }
+
+        .blogi_mid {
+            width: 98%;
+        }
+
+        .blogi_comment {
+            text-align: center;
+        }
+    }
+
+    /* tablet width >=740px and width< 1024 */
+    @media only screen and (min-width:741px) and (max-width:1024px) {
+        .blogi_side {
+            width: 10%;
+        }
+
+        .blogi_mid {
+            width: 80%;
+        }
+
+        .blogi_comment {
+            text-align: center;
+        }
+
+
+    }
+</style>
+<div class="header_4">
+    <div class="dropdown">
+        <div><button class="dropbtn">Blog Manager</button></div>
+        <div class="dropdown-content">
+            <a href="/blog/create-blog/">Add Blog</a>
+            <a href="/blog/update-blog/18/">Edit Blog</a>
+            <a href="/blog/delete-blog/18/">Delete Blog</a>
+        </div>
+    </div>
+
+</div>
+
+                
+            </div>
+        </div>
+        <div style="width: 100%; height: 100%;">
+<div class="blogi_body">
+    <div class="blogi_side"></div>
+    <div class="blogi_mid">
+        <div>
+            <p>18</p>
+            <h1> YĂªu xa vĂ  nhá»¯ng chuyá»‡n khĂ¡c</h1>
+            <h3><br>Cháº³ng hiá»ƒu dĂ­nh lá»i nguyá»n gĂ¬ mĂ  phĂ¢n ná»­a thá»i gian yĂªu nhau cá»§a chĂºng tĂ´i Ä‘á»u lĂ  tĂ¬nh yĂªu qua mĂ n hĂ¬nh Ä‘iá»‡n thoáº¡i. Cá»© Ä‘Æ°á»£c má»™t nÄƒm quáº¥n quĂ½t thĂ¬ tá»± dÆ°ng biáº¿n trĂªn trá»i rÆ¡i tĂµm vĂ o nĂ£o hai Ä‘á»©a: khĂ´ng pháº£i anh Ä‘Ă¹ng Ä‘Ă¹ng Ä‘Ă²i Ä‘i há»c dáº¡y Yoga á»Ÿ ÄĂ  Láº¡t thĂ¬ tĂ´i cÅ©ng nháº£y dá»±ng lĂªn Ä‘Ă²i chuyá»ƒn vá» thĂ nh phá»‘ khĂ¡c... </h3>
+            <p> <br>Tháº¿ lĂ  láº¡i yĂªu xa! Mang tiáº¿ng háº¹n hĂ² nhÆ°ng háº§u háº¿t chĂºng tĂ´i Ä‘á»u gáº·p nhau á»Ÿ quĂ¡n trĂ  Ä‘Ă¡ vá»‰a hĂ¨ ngĂµ 183 Tráº§n Äáº¡i NghÄ©a. Cá»© má»—i láº§n chĂºng tĂ´i yĂªu xa, u bĂ¡n quĂ¡n Ä‘á»u ngao ngĂ¡n:  - Äá»©a kia Ä‘Ă¢u? Láº¡i sáº¯p bá» nhau Ä‘áº¿n nÆ¡i Ă ? - Bá» Ä‘Ă¢u u, chá»‰ lĂ  tĂ¡ch nhau ra cho nĂ³ Ä‘á»¡ nhĂ m thĂ´i. Táº¡m nghá»‰, táº¡m nghá»‰. - ChĂºng mĂ y lĂ  ChĂ­ PhĂ¨o Thá»‹ Ná»Ÿ hay sao mĂ  táº¡m nghá»‰ yĂªu? TrĂªn Ä‘á»i nĂ y, ngu nháº¥t lĂ  Ä‘á»ƒ ngÆ°á»i yĂªu bá» mĂ¬nh mĂ  Ä‘i Ä‘áº¥y! ThĂ¬ chĂºng tĂ´i cÅ©ng lĂ  ngu tháº­t mĂ . Ngu nĂªn má»›i tá»± dÆ°ng khĂ´ng Ä‘Ă¢u chá»n xa cĂ¡ch cho cá»±c. Tháº¿ nhÆ°ng cháº³ng Ä‘á»©a nĂ o than vĂ£n hay ngÄƒn cáº£n quyáº¿t Ä‘á»‹nh cá»§a nhau (huhu, cĂ£m Æ°n anh 3000 láº§n). NgÆ°á»i khĂ¡c báº£o yĂªu xa thĂ¬ nháº¡t nhĂ²a Ä‘i (Ä‘áº¿n bĂ  vá»i bá»‘ tĂ´i cĂ²n cháº¯c Ä‘anh: mĂ y cá»© tháº¿ nĂ³ bá» Ä‘áº¥y). Tháº¿ nhÆ°ng, trĂ² há» lĂ  má»—i láº§n pháº£i yĂªu xa, tá»± thĂ¢n chĂºng tĂ´i tháº¥y chuyá»‡n tĂ¬nh yĂªu tĂ¬nh bĂ¡o láº¡i Ä‘i lĂªn má»™t báº­c. á» cáº¡nh nhau lĂ¢u, cáº£ hai Ä‘á»u Ä‘á»“ng Ă½: KhĂ´ng cáº§n pháº£i yĂªu nhiá»u ngÆ°á»i nhÆ°ng nháº¥t Ä‘á»‹nh pháº£i yĂªu má»™t ngÆ°á»i vá»›i tháº­t nhiá»u tráº£i nghiá»‡m. YĂªu xa, cáº£ lĂºc chá»§ Ä‘á»™ng láº«n lĂºc bá»‹ Ä‘á»™ng hĂ³a ra Ä‘á»u cho phĂ©p chĂºng tĂ´i hiá»ƒu thĂªm nhiá»u Ä‘iá»u.    Láº§n yĂªu xa Ä‘áº§u tiĂªn yĂªu xa bá»‹ Ä‘á»™ng, tĂ´i há»c Ä‘Æ°á»£c cĂ¡ch Ä‘á»‘i diá»‡n vá»›i cuá»™c sá»‘ng khi ngÆ°á»i ká» cáº¡nh bá»—ng dÆ°ng báº·t vĂ´ Ă¢m tĂ­n (vĂ¢ng, lĂ£o Ä‘i há»c lĂ m giĂ¡o viĂªn mĂ  hÆ¡n Ä‘i tu nhĂ©, nguyĂªn máº¥y thĂ¡ng khĂ´ng má»™t tin tá»©c, lĂ¢u lĂ¢u tháº¥y trung tĂ¢m Ä‘Äƒng áº£nh lĂ£o Ä‘ang uá»‘n Ă©o lĂ m chĂº bĂ² cáº¡p hay trá»“ng cĂ¢y chuá»‘i Ä‘á»ƒ biáº¿t cĂ²n sá»‘ng thĂ´i). Tá»« chá»— Ä‘ang cĂ³ ngÆ°á»i sai váº·t tĂ´i láº¡i trá»Ÿ vá» hĂ¬nh áº£nh ngÆ°á»i phá»¥ ná»¯ lá»±c Ä‘iá»n, lĂ¡i xe luá»“n lĂ¡ch phÄƒm phÄƒm, tay cáº§m tua vĂ­t sá»­a Ä‘Ă¨n, mĂ³c cá»‘ng, cĂµng cĂ¡i quáº¡t Ä‘iá»‡n sau xe vá»›i sá»± cÆ°á»i cá»£t cá»§a chĂº chá»§ quĂ¡n:  - Xinh tháº¿ nĂ y mĂ  chÆ°a cĂ³ ngÆ°á»i yĂªu Ă ? Kiáº¿m Ä‘á»©a nĂ³ Ä‘i chá»Ÿ cho chá»©! TĂ´i: hÆ¡ hÆ¡ hÆ¡.... *sad*, xin gá»­i chá»§ chiáº¿c music nĂ y thay cho lá»i giáº£i thĂ­ch. Láº§n yĂªu xa thá»© hai chá»§ Ä‘á»™ng hÆ¡n nhÆ°ng láº¡i vĂ o giai Ä‘oáº¡n cáº£ hai Ä‘ang cÄƒng tháº³ng Ä‘áº¿n má»©c tÆ°á»Ÿng sáº½ nghá»‰ nhau Ä‘áº¿n nÆ¡i, chĂºng tĂ´i há»c Ä‘Æ°á»£c cĂ¡ch nhĂ¬n láº¡i &amp; chá»¯a lĂ nh báº£n thĂ¢n, há»c Ä‘Æ°á»£c cĂ¡ch thiáº¿t láº­p ranh giá»›i, há»c bĂ¬nh tĂ¢m hÆ¡n Ä‘á»ƒ láº¯ng nghe Ä‘iá»u mĂ¬nh cáº§n vĂ  Ä‘iá»u ngÆ°á»i kia muá»‘n trong má»‘i quan há»‡. Rung Ä‘á»™ng thĂ¬ cĂ³ thá»ƒ lĂ  cáº£m xĂºc chá»© yĂªu Ä‘Æ°Æ¡ng thá»±c ra cÅ©ng lĂ  má»™t loáº¡i lá»±a chá»n ráº¥t lĂ½ tĂ­nh. Tá»± dÆ°ng há»“i Ä‘Ă³ bá»—ng nháº­n ra sĂ¢u sáº¯c ráº±ng: duy trĂ¬ má»™t tĂ¬nh yĂªu thĂ¬ trĂ¡i tim cáº§n pháº£i Ä‘Æ°á»£c xĂ o náº¥u vá»›i má»™t chĂºt vá»›i bá»™ nĂ£o. Láº§n yĂªu xa nĂ y thĂ¬ khĂ¡c hÆ¡n chĂºt. ChĂºng tĂ´i cÅ©ng Ä‘Ă£ Ä‘i qua Ä‘Æ°á»£c nhá»¯ng cÄƒng tháº³ng nĂªn giá» chá»‰ lĂ¡o nhĂ¡o tĂ¬m hiá»ƒu vĂ i thá»© hay ho cá»§a há»™i nhá»¯ng ngÆ°á»i yĂªu xa (gá»“m tĂ´i vĂ  2 báº¡n khĂ¡ch hĂ ng cĂ¹ng chung cáº£nh ngá»™, lĂ¢u lĂ¢u tĂ¢m sá»± má»ng) mĂ  thĂ´i. Äáº¡i thá»ƒ nhÆ° lĂ  yĂªu xa thĂ¬ duy trĂ¬ káº¿t ná»‘i nhÆ° tháº¿ nĂ o, have sex ra sao, lĂºc may máº¯n Ä‘Æ°á»£c Ä‘oĂ n tá»¥ thĂ¬ táº­n dá»¥ng thá»i gian nhÆ° tháº¿ nĂ o, lĂ m sao Ä‘á»ƒ vÆ°á»£t qua cÆ¡n ghen tuĂ´ng hoáº·c hiá»ƒu láº§m thÆ°á»ng nháº­t. NĂ³i lĂ  vÆ°á»£t qua giai Ä‘oáº¡n khĂ³ khÄƒn nhÆ°ng yĂªu mĂ , lĂºc nĂ o mĂ  cháº³ng bá»‹ tĂ¡ng cho vĂ i ba cĂº ráº¯c rá»‘i cho cĂ³ tĂ­ gia vá»‹. Nhá»› Äáº·c sáº£n cá»§a yĂªu xa lĂ  ná»—i nhá»› báº¥t lá»±c. Ă tĂ´i lĂ  cĂ¡i kiá»ƒu nhá»› man mĂ¡c buá»•i ngĂ y vĂ  giĂ£y dá»¥a má»—i Ä‘Ăªm mĂ  cháº³ng thá»ƒ lĂ m gĂ¬ Ä‘Æ°á»£c Ä‘áº¥y. RĂµ rĂ ng cĂ´ng nghá»‡ chÆ°a thá»ƒ Ä‘áº» ra cĂ¡i mĂ n hĂ¬nh mĂ  chá»‰ cáº§n cháº¡m vĂ o Ä‘Ă³ thĂ´i lĂ  chĂºng ta cĂ³ cáº£m giĂ¡c nhÆ° Ä‘ang bĂªn cáº¡nh nhau mĂ . Äáº¿n Na bĂ©o nhĂ  tĂ´i má»—i khi nghe tiáº¿ng bá»‘ Ä‘á»u phi tá»›i ráº¥t nhanh nhÆ°ng quay Ä‘Ă­t cÅ©ng ráº¥t nhanh khi nháº­n ra &quot;chá»‰ lĂ  cĂ¡i Ä‘iá»‡n thoáº¡i&quot;. Tháº¿ nĂªn cĂ¡c bĂ© gen Z cĂ³ chá»“ng 2D lĂ  cĂ¡c idol thĂ¬ bá»n yĂªu xa chĂºng tĂ´i tháº­t ra cÅ©ng khĂ´ng hÆ¡n gĂ¬, chÆ°a ká»ƒ tĂ´i chá»‰ cĂ³ má»™t chá»“ng 2D lĂ  chĂº chimcu cĂ²n cĂ¡c bĂ© cĂ³ thá»ƒ má»™t lĂºc cĂ³ Song Joong Ki láº«n Yook Sung-jae vĂ  lĂ¢u lĂ¢u Ä‘á»•i giĂ³ sang Dá»‹ch DÆ°Æ¡ng ThiĂªn Tá»‰. CĂ³ nhá»¯ng hĂ´m video call, chĂºng tĂ´i cĂ²n bá»±c bá»™i anh Mark vĂ¬ sao khĂ´ng cáº­p nháº­t tĂ­nh nÄƒng háº¹n giá» cho cuá»™c gá»i Ä‘á»ƒ hai Ä‘á»©a cĂ³ thá»ƒ Ä‘áº·t Ä‘iá»‡n thoáº¡i, nhĂ¬n nhau Ä‘áº¿n lĂºc Ä‘i ngá»§ thĂ¬ nĂ³ tá»± táº¯t. KhĂ³ khÄƒn nháº¥t cá»§a viá»‡c yĂªu xa lĂ  báº¥m vĂ o nĂºt táº¯t cuá»™c gá»i khi trong lĂ²ng váº«n muá»‘n Ä‘Æ°á»£c ngáº¯m nhĂ¬n ngÆ°á»i kia cho Ä‘áº¿n khi máº¯t dĂ­u láº¡i má»›i thĂ´i. CĂ³ nhá»¯ng hĂ´m Ä‘ang gá»i, chimcu tá»± dÆ°ng báº£o: - Anh nhá»› em tháº­t Ä‘Ă³, hĂ´m nay HĂ  Ná»™i cá»© mÆ°a mĂ£i, mÆ°a to láº¯m, anh Ä‘i qua ThĂ¡i HĂ  chĂºng nĂ³ cĂ²n má»Ÿ nháº¡c tháº¥t tĂ¬nh lĂ m anh tÆ°á»Ÿng mĂ¬nh tháº¥t tĂ¬nh tháº­t. CĂ³ nhá»¯ng hĂ´m tĂ´i nháº¯n: &quot;HĂ´m nay em lĂ m Ä‘Æ°á»£c sá»‘t dáº§u trá»©ng bá»¯a anh chá»‰ rá»“i, xá»‹n hem xá»‹n hem&quot; thĂ¬ ngÆ°á»i yĂªu tĂ´i láº¡i chĂ©p chĂ©p ráº¥t khĂ´ng liĂªn quan: &quot;Nhá»› em tháº­t sá»±! :&lt;&quot; Cáº£ hai Ä‘á»©a Ä‘á»u ráº¥t thoáº£i mĂ¡i diá»…n Ä‘áº¡t cáº£m xĂºc vá»›i nhau nhÆ°ng náº¿u báº£o tĂ´i khĂ´ng buá»“n khi nghe nhá»¯ng lá»i nhÆ° váº­y lĂ  nĂ³i dá»‘i. CÆ¡ mĂ , biáº¿t sao Ä‘Æ°á»£c, anh thĂ­ch vĂ  Ä‘ang phĂ¡t triá»ƒn á»Ÿ HĂ  Ná»™i, cĂ²n HĂ  Ná»™i thĂ¬ tá»‡ vá»›i sá»©c khá»e cá»§a tĂ´i quĂ¡. Há»“i yĂªu xa láº§n hai, tĂ´i giáº­n anh ráº¥t nhiá»u vĂ¬ má»—i ngĂ y khĂ´ng chá»§ Ä‘á»™ng liĂªn láº¡c. Äá»£t Ä‘Ă³ tĂ´i cĂ²n Ä‘ang cá»• há»§, cho ráº±ng: ÄĂ n Ă´ng chá»§ Ä‘á»™ng má»›i lĂ  Ä‘Ă n Ă´ng thÆ°Æ¡ng mĂ¬nh, Ä‘Ă n Ă´ng khĂ´ng chá»§ Ä‘á»™ng thĂ¬ mĂ¬nh cháº³ng lĂ  cĂ¡i Ä‘inh gá»‰ trong máº¯t ngÆ°á»i ta. Tháº¿ nhÆ°ng giá» cuá»‘i cĂ¹ng tĂ´i cÅ©ng hiá»ƒu lá»i anh nĂ³i:  - Anh nhá»› em ráº¥t nhiá»u nhÆ°ng má»—i láº§n gá»i cho em anh chá»‰ muá»‘n Ă´m em thĂ´i cÅ©ng khĂ´ng Ä‘Æ°á»£c. Anh ráº¥t ghĂ©t cáº£m giĂ¡c Ä‘Ă³! Giá» thĂ¬ tĂ´i cÅ©ng y chang tháº¿! GhĂ©t viá»‡c pháº£i táº¯t mĂ¡y, ghĂ©t viá»‡c muá»‘n Ă´m nhÆ°ng khĂ´ng Ă´m Ä‘Æ°á»£c, ghĂ©t cáº£ chuyá»‡n nghÄ© ráº±ng: chĂ­nh mĂ¬nh lá»±a chá»n Ä‘iá»u nĂ y! Xa nhau khi Ä‘ang giáº­n nhau thĂ¬ Ä‘á»¡ nhá»› hÆ¡n lĂ  xa nhau lĂºc yĂªu. Xa nhau lĂºc cĂ£i nhau thĂ¬ hÆ¡i shock vĂ¬ pháº£i táº¡m xa thá»© quen thuá»™c chá»© cĂ¡i táº§m nĂ y, khi xa nhau lĂºc cĂ²n yĂªu Ä‘Æ°Æ¡ng dui dáº» lĂ m hai Ä‘á»©a tĂ´i cÅ©ng Ä‘áº¿n khá»• máº¥y ngĂ y Ä‘áº§u. CĂ¡i lĂºc chĂº chimcu xĂ¡ch vali tá»« nhĂ  tĂ´i ra HĂ  Ná»™i, tĂ´i Ä‘á»©ng trĂªn nhĂ  nhĂ¬n xuá»‘ng, tá»± dÆ°ng nÆ°á»›c máº¯t cá»© tháº¿ mĂ  xá»‘i xáº£. TÆ°á»Ÿng Ä‘Ă¢u yĂªu xa cĂ³ thĂ¢m niĂªn lĂ m tĂ´i máº¡nh máº½ láº¯m, ai ngá»... cáº£m giĂ¡c há»¥t háº«ng nháº¥n chĂ¬m háº¿t cáº£. CÄƒn nhĂ  tĂ´i Ä‘ang á»Ÿ má»™t tay anh lau dá»n, Ä‘áº·t long nĂ£o trá»« giĂ¡n á»Ÿ tá»«ng gĂ³c vĂ¬ biáº¿t tĂ´i sáº½ cháº¡y máº¥t dĂ©p khi tháº¥y sinh váº­t Ä‘Ă³, nĂªn Ä‘i ra Ä‘i vĂ o, toĂ n chá»‰ tháº¥y hĂ¬nh áº£nh cá»§a anh Ä‘ang lá»¥i cá»¥i lá»¥i cá»¥i. ÄĂ  Náºµng vá»›i HĂ  Ná»™i cÅ©ng khĂ´ng quĂ¡ cĂ¡ch biá»‡t nhÆ°ng cáº£m tÆ°á»Ÿng cá»© nhÆ° nhá»¯ng Ä‘áº¡i há»c, pháº£i ra sĂ¢n bay tiá»…n con báº¡n thĂ¢n nháº¥t Ä‘i Äá»©c. Äáº¥y, rá»“i con báº¡n khĂ¹ng Ä‘iĂªn tĂªn LVL Ä‘áº¥y táº­n bĂ¢y giá» váº«n chá»‰ lĂ  Ä‘á»©a há»©a hÆ°Æ¡u há»©a vÆ°á»£n, há»©a há»c 1 nÄƒm sáº½ vá» nhÆ°ng 4 nÄƒm rá»“i, 4 nÄƒm rá»“i, nĂ³ váº«n chÆ°a vá» láº¥y Album Ng&#x27;bthg vá»›i cáº£ bá»™ Thá»‹ tráº¥n mĂ¨o nhá» tĂ´i mua há»™ *giáº­n tĂ­m ngÆ°á»i*. ÄoĂ n tá»¥ NgĂ y trÆ°á»›c yĂªu xa, tĂ´i hay ra HĂ  Ná»™i thÄƒm anh cĂ²n bĂ¢y giá» thĂ¬ anh hay vĂ o thÄƒm tĂ´i hÆ¡n. YĂªu xa nĂªn má»—i láº§n gáº·p nhau Ä‘á»u nhÆ° vĂ ng nhÆ° ngá»c. NĂ³i nhÆ° vĂ ng nhÆ° ngá»c lĂ  nĂ³i tháº­t, khĂ´ng phĂ´ trÆ°Æ¡ng quĂ¡ Ä‘Ă¢u. BĂ¬nh thÆ°á»ng, vĂ¬ tĂ­nh cháº¥t cĂ´ng viá»‡c nĂªn tĂ´i khĂ´ng cáº§n dáº­y quĂ¡ sá»›m nhÆ°ng vĂ¬ anh vĂ o tĂ´i dáº­y tá»« lĂºc 7h. CÆ¡ báº£n lĂ  muá»‘n dĂ nh nhiá»u thá»i gian Ä‘á»ƒ hoáº¡t Ä‘á»™ng vá»›i nhau. Anh chÆ°a vĂ o tĂ´i Ä‘Ă£ lĂªn má»™t list nhá»¯ng viá»‡c, nhá»¯ng nÆ¡i sáº½ Ä‘Æ°a anh Ä‘i. Nhá»¯ng láº§n anh tĂ¢m sá»± vá» Ă¡p lá»±c, cĂ²n tĂ´i Ä‘ang lang thang á»Ÿ biá»ƒn, tĂ´i Ä‘á»u nghÄ©: GiĂ¡ mĂ  chimcu cĂ³ thá»ƒ á»Ÿ Ä‘Ă¢y, nÆ°á»›c biá»ƒn sáº½ lĂ m dá»‹u anh ráº¥t nhiá»u! TĂ´i tháº¥y, Ä‘á»©a nĂ o yĂªu vĂ o cÅ©ng giá»‘ng mĂ¬nh, Äƒn Ä‘Æ°á»£c cĂ¡i gĂ¬ ngon, tráº£i nghiá»‡m Ä‘Æ°á»£c cĂ¡i gĂ¬ hay cÅ©ng muá»‘n ngÆ°á»i yĂªu mĂ¬nh Ä‘Æ°á»£c hÆ°á»Ÿng cĂ¹ng. TrĂ¢m bĂ©o vá»›i cáº£ chá»‹ Nga Ä‘i chÆ¡i Ä‘Ă¢u cÅ©ng táº¥m táº¯c: Chá»— nĂ y mĂª Ä©a nhá»‰, pháº£i dáº¯t Huy bĂ©o má»›i cáº£ Long Ä‘áº¿n má»›i Ä‘Æ°á»£c! NgĂ y anh nháº¯n tin báº£o sáº¯p vĂ o SĂ i GĂ²n cĂ´ng tĂ¡c, xong viá»‡c Ä‘Æ°á»£c nghá»‰ nĂªn anh book vĂ© vĂ o em rá»“i mĂ  tĂ´i nhÆ° cĂ³ phĂ¡o hoa báº¯n bĂ¹m chĂ­u trong lĂ²ng. CĂ²n táº­n máº¥y tuáº§n mĂ  Ä‘Ă£ thu xáº¿p cĂ´ng viá»‡c Ä‘á»ƒ nhá»¯ng ngĂ y anh vĂ o chá»‰ cĂ³ dĂ nh cho anh thĂ´i hiuhiu. NgĂ y trÆ°á»›c hĂ´m anh Ä‘áº¿n, tĂ´i tá»‰nh dáº­y nhÆ°ng ngÆ°á»i dĂ i thÆ°á»£t ra theo kim Ä‘á»“ng há»“: NgĂ y gĂ¬ mĂ  thá»i gian cháº­m vĂ£i! TĂ´i Æ°á»›c mĂ¬nh cĂ³ thá»ƒ ngá»§ má»™t phĂ¡t lĂ  Ä‘áº¿n 4h30 tháº¥y anh á»Ÿ chung má»™t báº§u trá»i rá»“i. Con báº¡n tĂ´i báº£o: GiĂ  rá»“i Ä‘á»«ng nhÆ° cĂ¡c chĂ¡u ná»¯a nhÆ°ng tĂ´i ká»‡. Tay chĂ¢n mĂ¬nh cĂ³ thá»ƒ tá»± Ä‘iá»u khiá»ƒn chá»© máº¥y bá»™ pháº­n bĂªn trong Ä‘Ă¢u chá»‹u nghe lá»i. Bá»¥ng nĂ³ng vĂ¬ bá»“n chá»“n vĂ  toĂ n thĂ¢n choĂ£i ra khĂ´ng muá»‘n lĂ m gĂ¬ Ä‘Ă¢u pháº£i táº¡i tĂ´i báº£o nĂ³ tháº¿! Bá»n con gĂ¡i chĂºng tĂ´i ráº¥t hay tÆ°á»Ÿng tÆ°á»£ng. TĂ´i Ä‘Ă£ nghÄ© mĂ¬nh sáº½ Ă¹a vĂ  rĂºc vĂ o ngÆ°á»i yĂªu nhÆ° tháº¿ nĂ o khi anh Ä‘áº¿n nhÆ°ng hiá»‡n thá»±c luĂ´n phÅ© phĂ ng. Chuyáº¿n bay delay cáº£ tiáº¿ng Ä‘á»ƒ tĂ´i náº±m dĂ i thĂªm. Vá»«a vĂ o nhĂ  anh Ä‘Ă£ vá»™i vĂ£ Ä‘i kiá»ƒm tra máº¥y hĂ²n long nĂ£o xem cĂ³ trá»‹ Ä‘Æ°á»£c giĂ¡n khĂ´ng rá»“i hĂ­ há»­ng lĂ´i cĂ¡i cá»¥c sáº¡c tĂ´i bá» quĂªn á»Ÿ HĂ  Ná»™i ra: - Tadaaaa, anh biáº¿t em khĂ´ng nhá»› Ä‘Ă¢u nhÆ°ng pháº£i cĂ³ cá»¥c nĂ y má»›i sáº¡c nhanh Ä‘Æ°á»£c. ChÆ°a háº¿t, nghe tĂ´i than vá» viá»‡c khĂ´ng cĂ³ cá»•ng chuyá»ƒn ná»‘i laptop vá»›i cĂ¡i mĂ n hĂ¬nh dáº¡y há»c, lĂ£o cÅ©ng xĂ²e ra cĂ¡i dĂ¢y ná»‘i Ä‘Ă³, hĂ¬ há»¥c cáº¯m cáº¯m, chá»‰nh chá»‰nh. Tháº¿ lĂ  nguyĂªn cáº£ buá»•i chiá»u cĂ²n chÆ°a Ä‘Æ°á»£c miáº¿ng Ă´m nĂ o Ä‘Ă£ nhÆ° hai anh thá»£ Ä‘iá»‡n, thá»£ sá»­a nhĂ . Vá»«a lĂ m lĂ£o vá»«a cÆ°á»i cá»£t vá» sá»± máº¥t nĂ£o cá»§a tĂ´i cĂ²n tĂ´i thĂ¬ khÄƒng khÄƒng: Anh xem Tiktok Ă­t thĂ´i, máº¥y content trĂªn Ä‘Ă³ toĂ n bĂªu xáº¥u con gĂ¡i bá»n em chá»© em Ä‘Ă¢u cĂ³ Ä‘Ă£ng trĂ­ Ä‘áº¿n tháº¿! CĂ³ sĂ¡ng, tĂ´i Ä‘á»‹nh dáº¯t anh Ä‘i ngáº¯m bĂ¬nh minh nhÆ°ng dáº­y Ä‘Ă¡nh rÄƒng rá»­a máº·t xong tá»± dÆ°ng láº¡i lĂ´i chuyá»‡n chá»©ng khoĂ¡n ra nĂ³i. Ráº±ng lĂ  mĂ£ nĂ y Ä‘ang tháº¿ nĂ o, anh vĂ o chÆ°a, em Ä‘ang lo Ä‘Ă¢y nĂ y nhÆ° hai nhĂ¢n viĂªn tÆ° váº¥n. Cuá»‘n quĂ¡ máº·t trá»i Ä‘Ă£ lĂªn Ä‘áº¿n ngá»n má»›i nhá»› ra lĂ  Ä‘á»‹nh Ä‘i ngáº¯m bĂ¬nh minh. Cá»© kiá»ƒu ngáº«u há»©ng nhÆ° váº­y nĂªn máº¥y ngĂ y tiáº¿p theo Ä‘Ă³, tĂ´i vĂ¹ng váº±ng: Anh vĂ o em sao ngá»§ nhiá»u tháº¿! Dá»‹ch thĂ¬ khĂ´ng Ä‘i Ä‘Ă¢u tháº­t nhÆ°ng cÅ©ng pháº£i cĂ¹ng nhau lĂ m gĂ¬ chá»©? HĂ³a ra, Ä‘áº¿n cáº£ chuyá»‡n yĂªu tĂ´i cÅ©ng mang tĂ¢m lĂ½ Ä‘i Äƒn buffet: cáº¥t cĂ´ng má»™t láº§n thĂ¬ pháº£i hÆ°á»Ÿng cho Ä‘Ă£, lĂ¢u láº¯m má»›i gáº·p láº¡i nhau pháº£i lĂ m tháº­t nhiá»u trĂ². Pháº£i Ä‘i chá»¥p áº£nh, pháº£i Ä‘i Äƒn, pháº£i Ä‘i chÆ¡i, pháº£i tháº¿ nĂ y tháº¿ kia má»›i giá»‘ng yĂªu. NhÆ°ng nhĂ¬n ngÆ°á»i yĂªu má»‡t má»i sau Ä‘á»£t cĂ´ng tĂ¡c, ngá»§ ngon lĂ nh tĂ´i láº¡i nguĂ´i! Trong má»™t khoáº£nh kháº¯c, tĂ´i tá»± dÆ°ng nháº­n ra: Nhá»“i nhĂ©t quĂ¡ lĂ m gĂ¬, ngáº¥y Ä‘áº¥y. Nhiá»u lĂºc, á»Ÿ cáº¡nh nhau thĂ´i cÅ©ng Ä‘á»§ Ă½ nghÄ©a rá»“i. Have sex online TĂ´i lĂ  Ä‘á»©a ráº¥t tĂ´n trá»ng tá»© khoĂ¡i, nĂªn yĂªu xa thĂ¬ yĂªu cÅ©ng nháº¥t quyáº¿t khĂ´ng Ä‘á»ƒ Ä‘iá»u Ä‘Ă³ áº£nh hÆ°á»Ÿng sinh hoáº¡t hĂ ng ngĂ y &gt;&quot;&lt;. Há»“i xÆ°a cĂ²n dáº¡i chÆ°a biáº¿t nhiá»u nhÆ°ng giá» cĂ³ cĂ¡c chá»‹ em rá»“i, chĂºng tĂ´i láº¡i cĂ³ tráº£i nghiá»‡m trĂ² há» nhÆ°ng Ä‘Ă¡ng giĂ¡ nĂ y. Tháº­t lĂ²ng Ä‘á»™i Æ¡n cĂ´ng nghá»‡! Tá»« ngĂ y yĂªu xa, tĂ´i má»›i Ä‘Æ°á»£c má»Ÿ mang vá» thá»© gá»i lĂ  ba con sĂ³i dĂ nh cho ngĂ³n tay vĂ  ti tá»‰ tráº£i nghiá»‡m khĂ¡c. Pháº§n nĂ y tĂ´i sáº½ Ä‘á»ƒ hĂ¬nh áº£nh nĂ³i há»™ táº¥m lĂ²ng nhĂ©. Äáº¡o cá»¥ cÆ¡ báº£n thĂ¬ váº«n lĂ  smartphone, má»™t tĂ¢m há»“n cá»Ÿi má»Ÿ thÆ° thĂ¡i vĂ  nhá»¯ng thá»© Ä‘Ă¢y (cĂ³ cáº£ trĂªn shopee vĂ  nhiá»u nÆ¡i khĂ¡c :&gt;&gt;&gt;&gt;). Äáº£m báº£o bĂ¹m chĂ­u bĂ¹m chĂ­u chiu!  Ghen YĂªu nhau cÅ©ng khĂ¡ lĂ¢u nhÆ°ng tĂ´i khĂ´ng pháº£i lĂ  Ä‘á»©a hay ghen (khs). Tháº¿ mĂ  Ä‘á»£t nĂ y tĂ´i láº¡i hay ghen tháº¥y rĂµ. Biáº¿t yĂªu Ä‘Æ°Æ¡ng lĂ  tin tÆ°á»Ÿng nhÆ°ng lĂ¢u lĂ¢u cĂ³ ghen tĂ­ hĂ³a ra láº¡i vui (nhÆ°ng vá»«a thĂ´i nhĂ©, máº¥y khĂ¡ch cá»§a tui Ä‘á»©t Ä‘oáº¡n vĂ¬ ghen quĂ¡ Ä‘á»™ Ä‘áº¥y, hiuhiu).  CÅ©ng cĂ³ thá»ƒ lĂ  trÆ°á»›c Ä‘Ă¢y Ä‘ang báº­n lo nhá»¯ng chuyá»‡n khĂ¡c, giá» ráº£nh rá»—i hÆ¡n thĂ¬ sinh sá»±. TĂ´i hay náº±m mÆ¡, náº±m mÆ¡ ngÆ°á»i yĂªu cáº·p bá»“, cĂ³ con riĂªng, gia Ä‘Ă¬nh pháº£n Ä‘á»‘i ghĂ©p Ä‘Ă´i lĂ£o vá»›i ngÆ°á»i khĂ¡c,... rá»“i áº¥m á»©c tá»©c tá»‘i tá»‰nh giáº¥c cáº£ Ä‘Ăªm. SĂ¡ng ra ká»ƒ láº¡i vá»›i ngÆ°á»i yĂªu miá»‡ng cÆ°á»i ha háº£ nhÆ°ng váº«n giáº­n vĂ¬ pháº£i Ă´m gá»‘i chá»‹u á»©c má»™t mĂ¬nh. NgÆ°á»i yĂªu tĂ´i báº£o xem Ă­t drama thĂ´i nhÆ°ng ká»³ tháº­t hĂ ng ngĂ y chá»‰ xem phim tĂ i liá»‡u trĂªn Netflix, sĂ¢u Larva, Tinkerbell má»›i cáº£ máº¥y phim cÅ© cá»§a Ghibli mĂ , oan á»©c ghĂª. T___________T Ă€ nhÆ°ng thá»±c ra kiá»ƒu ghen cá»§a tĂ´i cháº¯c cÅ©ng giá»‘ng nhiá»u chá»‹ em. Máº¥y Ä‘á»©a báº¡n tĂ´i cÅ©ng hay mÆ¡ tháº¿ (má»—i tĂ´i lĂ  táº¥m chiáº¿u má»›i, dáº¡o nĂ y má»›i tráº£i nghiá»‡m). HĂ´m trÆ°á»›c lĂªn Youtube cĂ²n tháº¥y Ä‘Æ°á»£c cáº£ video nĂ y cÆ¡ mĂ .  Hummm, mĂ  ngÆ°á»i yĂªu tĂ´i cÅ©ng cháº³ng kĂ©m cáº¡nh Ä‘Ă¢u. TrÆ°á»›c khi vá», lĂ£o Ä‘áº·t má»™t Ä‘iáº¿u thuá»‘c lĂ o to bá»± ngay trong phĂ²ng khĂ¡ch nhĂ  tĂ´i, miá»‡ng cÆ°á»i Ä‘áº¯c Ă½: - NĂ³ sáº½ thay anh cáº£nh cĂ¡o: NhĂ  nĂ y cĂ³ Ä‘Ă n Ă´ng, cáº¥m Ä‘á»©a nĂ o lĂ©ng phĂ©ng. NhÆ°ng buá»“n cho báº¡n chimcu lĂ  nhĂ  tĂ´i chá»‰ Ä‘Ă³n ná»¯ cĂ²n cĂ¡i Ä‘iáº¿u cá»§a anh lĂ¢u lĂ¢u Na bĂ©o láº¡i lĂ m Ä‘á»• nÆ°á»›c ra sĂ n thĂºi hoáº¯c nĂªn tĂ´i pháº£i cáº¥t ká»¹ Ä‘i. LĂ£o báº£o, sau nĂ y sáº½ Ä‘áº·t tĂªn con lĂ  Thuá»‘c LĂ o vĂ  Äiáº¿u CĂ y. ChĂºng nĂ³ sáº½ thay anh canh em vĂ  má»—i láº§n muá»‘n Ă´m, anh sáº½ gá»i chĂºng lĂ : - Thuá»‘c LĂ o Æ¡i, Äiáº¿u CĂ y Æ¡i, láº¡i Ä‘Ă¢y bá»‘ rĂ­t cĂ¡i nĂ o! =____________= --- YĂªu xa, Ä‘oĂ n tá»¥ rá»“i láº¡i yĂªu xa nhÆ°ng cĂ³ láº½ chĂ­nh vĂ¬ váº­y mĂ  tĂ´i trĂ¢n trá»ng hÆ¡n bao giá» háº¿t nhá»¯ng khoáº£ng kháº¯c á»Ÿ cĂ¹ng nhau vĂ  cÅ©ng háº¡nh phĂºc hÆ¡n má»—i khi Ä‘oĂ n tá»¥ Ä‘á»u cĂ³ thá»ƒ má»‰m cÆ°á»i vĂ¬ hai Ä‘á»©a Ä‘Ă£ trÆ°á»Ÿng thĂ nh hÆ¡n má»™t chĂºt trong thá»i gian Ä‘Ă³. ThĂ nh thá»­, tĂ´i hay cÆ°á»i cá»£t vá»›i cĂ¡c chá»‹ em ráº±ng: yĂªu xa cÅ©ng lĂ  cĂ¡ch Ä‘á»ƒ yĂªu nhiá»u ngÆ°á»i (nhiá»u phiĂªn báº£n khĂ¡c nhau cá»§a má»™t ngÆ°á»i) nhÆ°ng váº«n cĂ³ tiáº¿ng chung thá»§y, vá»«a Ä‘Æ°á»£c tiáº¿ng vá»«a Ä‘Æ°á»£c miáº¿ng láº¡i cĂ³ thĂªm tráº£i nghiá»‡m Ä‘á»ƒ cĂ²n tĂ¢m sá»± vá»›i khĂ¡ch ná»¯a. Trá»™m vĂ­a dáº¡o nĂ y ráº¥t nhiá»u báº¡n book lá»‹ch vá» tĂ¬nh iu tÆ°Æ¡i xanh xong thĂ nh chá»‹ em thÆ°Æ¡ng máº¿n thÆ°Æ¡ng luĂ´n. Ká»ƒ ná»‘t lĂ : BĂ¡c ruá»™t nuĂ´i tĂ´i hĂ´n nhĂ¢n hÆ¡n ba chá»¥c nÄƒm chÆ°a má»™t láº§n cĂ£i vĂ£ vĂ  lĂºc nĂ o cÅ©ng lĂ  hĂ¬nh máº«u cho con chĂ¡u, ai há»i bĂ¡c cÅ©ng cÆ°á»i: Ä‘Æ¡n giáº£n &quot;vĂ¬ bĂ¡c trai Ä‘i lĂ m á»Ÿ má»™t huyá»‡n khĂ¡c, chá»‰ vá» nhĂ  vĂ o thá»© 7 vĂ  Chá»§ nháº­t&quot; hoi Ä‘áº¥y! Dá»‹ nha! YĂªu xa cÅ©ng khĂ´ng tá»‡ láº¯m Ä‘Ă¢u nhá»‰? ChĂºc cĂ¡c báº¡n iu xa luĂ´n giá»¯ Ä‘Æ°á»£c lá»­a hoáº·c Ä‘Æ¡n giáº£n lĂ  há»c Ä‘Æ°á»£c cĂ¡ch giá»¯ lá»­a sau má»—i láº§n iu xa nhĂ© nhĂ©! <br></p>
+        </div>
+        
+        <div class="blogi_comments">
+            
+        </div>
+
+        <div class="blogi_comment">
+            <h1><br> Leave a comment:</h1>
+            <form method="POST">
+                
+                <input type="hidden" name="csrfmiddlewaretoken" value="TWz95cZmstKp3UYbWDdjN56urRwtIHI5s5lwvyP1UaAVo90gWggs5ETuH4nnR8uc">
+                <input type="text" name="your_name" placeholder="Your name">
+                <br><br>
+                <textarea type="text" rows="10" cols="30" name="comment" placeholder="Leave a comment"></textarea>
+                <br><br>
+                <input class="submit" type="submit" name="submit" value="Save">
+            </form>
+        </div>
+    </div>
+    <div class="blogi_side"></div>
+</div>
+</div>
+    </div>
+</body>
+
+</html>

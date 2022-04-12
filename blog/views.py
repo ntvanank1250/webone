@@ -1,6 +1,6 @@
-from turtle import update
 from django.shortcuts import render, redirect
 from .models import Blog, Comment
+
 
 
 # Create your views here.
@@ -19,26 +19,30 @@ def create_blog(request):
         if _title =='':
             return render(request,'blog/create_blog.html', {'error_message': ' The title is not empty. '})
         else:
-            blog = Blog(title=_title, description = _description,content=_content )
+            blog = Blog(title =_title, description = _description,content=_content )
             blog.save()
             return redirect('blog:blog')
     else:
         return render(request,'blog/create_blog.html')
 
 def blog_i(request, id):
+    
     blog_id = Blog.objects.get(pk=id)
-    blog={'blog':blog_id}
-    comment_id=Comment.objects
+    comments = blog_id.comments.all().order_by('-date')[:10],
+    param={'comments':comments,'blog':blog_id}
+    print(comments)
     if request.method == "POST":
+       
         _name = request.POST.get('your_name')
         _comment=request.POST.get('comment')
+        
         if _name =='' or _comment=='':
-            return render(request,'blog/blog_i.html',blog,{'error_message': ' The \"Your name\" or \"comment\" is not empty. '})
+            return render(request,'blog/blog_i.html',{'error_message': ' The \"Your name\" or \"comment\" is not empty. '},param)
         else:
-            comments = Comment(name=_name, comment = _comment)
-            comments.save()
-            return render(request,'blog/blog_i.html',blog)
-    return render(request,'blog/blog_i.html',blog)
+            comment_new = Comment(id_blog=blog_id, name = _name, comment = _comment)
+            comment_new.save()
+            return render(request,'blog/blog_i.html',param)
+    return render(request,'blog/blog_i.html',param)
 
 def update_blog(request,id):
     if request.method == "POST":
