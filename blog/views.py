@@ -27,10 +27,9 @@ def create_blog(request):
 
 def blog_i(request, id):
     
-    blog_id = Blog.objects.get(pk=id)
-    comments = blog_id.comments.all().order_by('-date')[:10],
-    param={'comments':comments,'blog':blog_id}
-    print(comments)
+    blog = Blog.objects.get(pk=id)
+    comments = blog.comments.all().order_by('-date')[:10]
+    param={'comments':comments,'blog':blog,}
     if request.method == "POST":
        
         _name = request.POST.get('your_name')
@@ -39,7 +38,7 @@ def blog_i(request, id):
         if _name =='' or _comment=='':
             return render(request,'blog/blog_i.html',{'error_message': ' The \"Your name\" or \"comment\" is not empty. '},param)
         else:
-            comment_new = Comment(id_blog=blog_id, name = _name, comment = _comment)
+            comment_new = Comment(id_blog=blog, name = _name, comment = _comment)
             comment_new.save()
             return render(request,'blog/blog_i.html',param)
     return render(request,'blog/blog_i.html',param)

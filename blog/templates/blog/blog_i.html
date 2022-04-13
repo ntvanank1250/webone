@@ -70,12 +70,20 @@
         flex-direction: column;
     }
 
-    .blogi_comment {
+    .blogi_add_comment {
         text-align: left;
     }
 
     .blogi_mid h1 {
         font-size: 250%;
+    }
+    .blogi_comment{
+        border-radius:5px;
+        background-color: #EEEEEE;
+    }
+    .blogi_comments h1{
+        color: #2e98ff ;
+        font-size: 120%;
     }
 
     /*  mobile and tablet */
@@ -91,7 +99,7 @@
             width: 98%;
         }
 
-        .blogi_comment {
+        .blogi_add_comment {
             text-align: center;
         }
     }
@@ -106,7 +114,7 @@
             width: 80%;
         }
 
-        .blogi_comment {
+        .blogi_add_comment {
             text-align: center;
         }
 
@@ -138,14 +146,17 @@
 
         <div class="blogi_comments">
             {% for comment in comments %}
-                <div>
+            <br>
+                <div class="blogi_comment">
                     <h1>{{comment.name}}</h1>
                     <p>{{comment.comment}}</p>
+                    
                 </div>
+                
             {% endfor %}
         </div>
 
-        <div class="blogi_comment">
+        <div class="blogi_add_comment">
             <h1><br> Leave a comment:</h1>
             <form method="POST">
                 {% if error_message %}
